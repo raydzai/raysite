@@ -16,3 +16,38 @@ html, body {
     min-height: 100vh;
     object-fit: cover;
 }
+
+.odin {
+    display: flex;
+    gap: 4vh;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 5vh;
+    bottom: 5vh;
+    right: 15vh;
+    left: 15vh;
+    z-index: 1;
+}
+
+.info {
+    width: 30%;
+    height: 100%;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.1); 
+    box-shadow: 0 8px 32px 0 rgba(13, 14, 36, 0.37);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.more {
+    flex: 1; 
+    height: 100%;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.1); 
+    box-shadow: 0 8px 32px 0 rgba(13, 14, 36, 0.37);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
