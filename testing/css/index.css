@@ -10,6 +10,13 @@ html, body {
     background-color: black;
 }
 
+@font-face {
+    font-family: "Monument";
+    src: url('../media/monument.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .bgr {
     position: fixed;
     min-width: 100vw;
@@ -24,14 +31,19 @@ html, body {
     position: fixed;
     top: 5vh;
     bottom: 5vh;
-    right: 15vh;
-    left: 15vh;
+    right: 10vh;
+    left: 10vh;
     z-index: 1;
 }
 
 .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
     width: 30%;
     height: 100%;
+    padding: 1.5%;
     flex-shrink: 0;
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.1); 
@@ -39,6 +51,7 @@ html, body {
     backdrop-filter: blur(10px); 
     -webkit-backdrop-filter: blur(10px); 
     border: 1px solid rgba(255, 255, 255, 0.18);
+    font-family: "Monument", sans-serif;
 }
 
 .more {
@@ -52,4 +65,54 @@ html, body {
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-## Don mat ha??
+.pfp {
+    width: 60%;
+}
+
+.sm {
+    margin-bottom: 2vh;
+}
+
+.social-icons {
+    position:fixed;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3vw;
+}
+
+.icon {
+  width: 1.7vw;
+  height: 1.7vw;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.helloText {
+    margin-top: 3vh;
+    margin-bottom: 0;
+    font-size: 2.2vw;
+    color: rgb(255, 255, 255);
+}
+
+@keyframes blink {
+    50% { 
+        border-color: transparent; 
+    }
+    100% { 
+        border-color: #ff3c00; 
+    }
+}
+
+.typing {
+  font-size: 3vw;
+  position: relative;
+  color: #ff3c00;
+  font-family: "Monument";
+  white-space: normal; 
+  border-right: 3px solid #ff3c00;
+  overflow-wrap: break-word;
+  max-width: 100%; 
+  box-sizing: border-box;
+  display: inline;
+  animation: blink 1s step-end infinite;
+}
