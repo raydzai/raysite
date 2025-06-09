@@ -1,0 +1,62 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'SF';
+    src: url('font.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+
+body {
+    font-family: 'SF', sans-serif;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.warn {
+    width: 13vw;
+    transform: translateY(1vw);
+}
+
+h1 { 
+    margin: .3%;
+    font-size: 10vw;
+}
+
+p {
+    font-size: 2vw;
+    margin: .3%;
+}
+
+@media (max-width: 480px) {
+    p {
+        font-size: 3vw;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    p {
+        font-size: 3vw;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    p {
+        font-size: 2.2vw;
+    }
+}
+
+@media (min-width: 1025px) {
+    p {
+        font-size: 1.5vw;
+    }
+}
+
