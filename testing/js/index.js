@@ -2,7 +2,7 @@ const texts = [
   "lê thanh hùng",
   "một thành viên của IT2427",
   "một thằng thích học ngôn ngữ",
-  "một thành viên của Thang Long's Vinyl",
+  "thành viên của Thang Long's Vinyl",
   "một thành viên của Mèo Lạt Band",
   "một guitarist nửa mùa",
   "một ca six gà mờ",
@@ -12,7 +12,7 @@ const texts = [
   "extrovert (hoặc không)",
   "liên fire con",
   "một chú cú đêm",
-  "fỏnt end develốpẻ",
+  "fỏnt end develốpẻ (lỏ)",
   "thám tử nửa mùa (đặt cho sang thôi)"
 ];
 
@@ -54,3 +54,9 @@ function type() {
 }
 
 type();
+
+const md = document.getElementById("md");
+const output = document.createElement("div");
+output.classList.add("md-output"); 
+output.innerHTML = marked(md.value);
+md.replaceWith(output);
